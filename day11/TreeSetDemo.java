@@ -17,5 +17,8 @@ public class TreeSetDemo {
         set.add(0);
 
         System.out.println(set);
+        System.out.println(set.size());
+        System.out.println(set.size());
+
     }
 }

@@ -1,6 +1,14 @@
 package day11;
 
 import java.util.Map;
+/*
+
+*/
+
+
+
+
+// Not synchronized
 
 public class HashMap {
     public static void main(String[] args) {
@@ -11,10 +19,14 @@ public class HashMap {
         map.put("two",2);
         map.put("three",3);
         map.put("four",4);
-        map.put("four",40);
+        map.put("four",40); // it is replacement
         map.put(null,4);  //allowed
         map.put(null,5);  //allowed
-        //null allowed at once only because duplicate keys not allowed
+        //null allowed at once only because duplicate keys not allowed 
+        // value can be null as well
+        // map.remove("key");
+        // o(1)time complexity both for get and put
+
 
         System.out.println(map.get("four"));
         if(map.containsKey("four"))
@@ -45,5 +57,7 @@ public class HashMap {
             System.out.println("key : "+key);
             System.out.println("value : "+value);
         });
+
+        // for(Map.Entry<Integer, String> entry : map.entrySet())
     }
 }

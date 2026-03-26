@@ -45,11 +45,12 @@ public class ComparatorDemo {
       
         List<Integer> list =  new ArrayList<>();
          list.add(1);
-         list.add(2);
          list.add(3);
-        //  list.sort(new customcoprator());
+         list.add(2);
+         System.out.println(list);
+         list.sort(new customcoprator());
         // list.sort((a,b)->a-b); // this is eqivalent to above line no need to give implementation to Comparator
-        Collections.sort(list,(a,b)->a-b);
+        // Collections.sort(list,(a,b)->a-b);
          System.out.println(list);
          
     } 
