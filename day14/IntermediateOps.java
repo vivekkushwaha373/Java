@@ -1,6 +1,7 @@
 package day14;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -52,9 +53,14 @@ public class IntermediateOps {
          Arrays.asList("pear","grape")
       );
 
+      
+
       System.out.println(listofLists.get(1).get(1));
       System.out.println(listofLists.stream().flatMap(x -> x.stream()).map(String::toUpperCase).toList());
 
+
+
+     
       List<String> senetences =  Arrays.asList(
          "Hello World",
          "Java streams are powerful",
@@ -62,6 +68,9 @@ public class IntermediateOps {
       );
       System.out.println(senetences.stream().flatMap(sentence-> Arrays.stream(sentence.split(" "))).map(String::toUpperCase).toList());
 
+ // 8. min/max
+
+      Stream.of(2.44,69).max(Comparator.naturalOrder())
 
      // 9 forEach Ordered
 

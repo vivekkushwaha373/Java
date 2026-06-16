@@ -1,0 +1,11 @@
+Logical class 
+static memeber class can only access static proetrties of outer class
+anomymous class can not have constructor because it does not  have name while defining
+Local class can use effective final var only
+
+
+// Convlusion
+1. Static Nested class used most
+2. Inner class
+3 AnonymousClassDemo --> used when u need to implement a feature once in entire codebase and is now replaced with lambda 
+4 Local class

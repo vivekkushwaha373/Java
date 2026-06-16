@@ -11,7 +11,7 @@ public class StringtoInt {
      //int to string
 
      int integer = 12234;
-     String inttoString = Integer.toString(integer);
+     String inttoString = Integer.toString(integer); //  or use String.valueof() // this can also be done
      System.out.println(inttoString);
 
      int a= 3;

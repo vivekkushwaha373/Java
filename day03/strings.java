@@ -7,6 +7,7 @@ public class strings {
    Scanner sc = new Scanner(System.in);
     String name = sc.nextLine();
     System.out.println("Your name is "+name);
+    String num = String.valueOf(0)
    
   }    
 }

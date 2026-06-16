@@ -5,3 +5,13 @@
 > default member can be accessed within same package anywhere but not in subclass
 > private member can be only accessed within the class it is defined in not in other class be it belongs to same packge or outside package
 > assesibility order [public > protected > default > private]
+> abstract method can have constructor and normal methods as well 
+> final varible also inherited but not initialized again
+> final class can not be inherited
+> An interface can contain:
+
+Abstract methods
+Default methods
+Static methods
+Constants (public static final fields)
+
