@@ -85,5 +85,3 @@ but GC will run fast using multithrading
 
 YOU can request JVM to initiate Garbage collection you can do System.GC()
 
-
-
