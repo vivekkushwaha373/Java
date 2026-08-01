@@ -10,18 +10,20 @@ public class DequeInterfaceDemo {
         queue.offer(2); // return false on fail
         queue.offer(3);
     
-        System.out.println(queue.peak()); // queue.element() also does the same
+        System.out.println(queue.peek()); // queue.element() also does the same
         
         queue.remove(); //throw exception
         queue.poll(); //safe return null
 
+
         //RECOMMEDED USE: offer, poll and peak
 
-        // offerfirst --> push
-        // offerlast
+        
+        // offerfirst --> push 
+        // offerlast -- > offer/add
         // pollfirst --> pop
-        // polllast
-        // peekfirst --> peek
+        // polllast 
+        // peekfirst --> peek/ element
         // peeklast
 
     }

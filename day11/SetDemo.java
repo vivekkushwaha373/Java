@@ -24,7 +24,7 @@ public class SetDemo {
 
        // unmodifiable set
 
-       Set<Integer> interger = Set.of(1,2,3,4,5,6,7,8,9,10);
+       Set<Integer> integer = Set.of(1,2,3,4,5,6,7,8,9,10);
        Collections.unmodifiableSet(null) // pass any set to make it unmodifiable
 
        

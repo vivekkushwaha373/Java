@@ -6,7 +6,7 @@ public class PriorityQueueDemo {
 
     public static void main(String[] args) {
         
-        // Queue<Integer> pq = new PriorityQueue<>((a,b)->b-a); // max heap
+        Queue<Integer> pq1 = new PriorityQueue<>((a,b)->b-a); // max heap
         Queue<Integer> pq = new PriorityQueue<>(); //min heap
         pq.offer(10); 
         pq.offer(2); 

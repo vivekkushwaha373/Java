@@ -12,7 +12,7 @@ public class SetInterfacedemo {
         set.add("Zoya");
         set.add("Abhishek");
         set.add("Aviral");
-
+        
         System.out.println(set.contains("Aviral"));
 
         Map<Integer, String> map  = new HashMap<>();

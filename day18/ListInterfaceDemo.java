@@ -14,6 +14,7 @@ public class ListInterfaceDemo {
         list.add(4);
 
         System.out.println(list.get(0));
+        System.out.println(list.getFirst());
         System.out.println(list);
         list.set(0,5);
         System.out.println(list);
@@ -31,9 +32,9 @@ public class ListInterfaceDemo {
         while(li.hasPrevious()){
             System.out.println(li.previous());
         }
-
+       
         // list.remove(2);
-        // list.remove(Interger.valueof(2));
+        // list.remove(Integer.valueof(2));
         
 
         // List.of this is immutable also check List.copyOf
