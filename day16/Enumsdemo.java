@@ -1,5 +1,22 @@
 package day16;
 
+
+// compiler generated code
+
+// final class sayHello extends Enum<sayHello> {
+
+//     public static final sayHello SUNDAY = new sayHello(1, "SUNDAY", 0);
+//     public static final sayHello MONDAY = new sayHello(2, "MONDAY", 1);
+//     public static final sayHello TUSEDAY = new sayHello(3, "TUSEDAY", 2);
+
+//     int x;
+
+//     private sayHello(int x, String name, int ordinal) {
+//         super(name, ordinal);
+//         this.x = x;
+//     }
+// }
+
 enum sayHello{
     SUNDAY(1), //what is this line public static final sayHello SUNDAY = new sayHello()
     MONDAY(2),
@@ -24,3 +41,4 @@ public class Enumsdemo {
 
     }
 }
+

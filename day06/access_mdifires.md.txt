@@ -2,13 +2,14 @@
 > one file belongs to same package can only have one public class
 > for member access modifires are--> public, private, protected, default
 > protected member can be accessed within same package as well as in subclass of other package if class is public
-> default member can be accessed within same package anywhere but not in subclass
+> default member can be accessed within same package anywhere but not in package
 > private member can be only accessed within the class it is defined in not in other class be it belongs to same packge or outside package
 > assesibility order [public > protected > default > private]
-> abstract method can have constructor and normal methods as well 
+> abstract method can have constructor and normal methods as well like default,static ans abstract 
 > final varible also inherited but not initialized again
 > final class can not be inherited
 > An interface can contain:
+> abstract class can not be final
 
 Abstract methods
 Default methods
