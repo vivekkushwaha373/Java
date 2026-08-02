@@ -32,7 +32,7 @@ public class comparableInterfacedemo {
       list.add(new Student("Rahul",10));
       list.add(new Student("Faizal",14));
 
-      Collections.sort(list);
+      Collections.sort(list);  // this internally uses comparable compareTo methid
       System.out.println(list);
 
    }   
