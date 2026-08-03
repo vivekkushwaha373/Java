@@ -21,5 +21,13 @@ public class thread11 {
 }
 
 /*
+It returns:
+
+true → The thread has been started and has not yet terminated.
+false → The thread has not been started yet or has already finished execution.
+
+*/
+
+/*
   isAlive() ---> start --> terminate
 */

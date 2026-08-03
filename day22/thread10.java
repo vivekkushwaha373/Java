@@ -24,8 +24,8 @@ public class thread10 {
   ---> Cancelling a long running task
   ---> Used to stop our Thread Pool 
 
-  isInterrupted() --> returns interrupt flag value (T/F)
-  interrupted()--> return interrupt flag value (T/F) but also set it back to false
+  ti.isInterrupted() --> returns interrupt flag value (T/F)
+  Threadd.interrupted()--> return interrupt flag value (T/F) but also set it back to false
 
   --> sleep(), join(), wait() : TIMED_WAITING, WAITING --> interrupt() on calling interrupt you wil 
   get interrupt exception

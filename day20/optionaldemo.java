@@ -10,12 +10,12 @@ import java.util.Optional;
 // Optional<String> n = Optional.of("Aditya");
 // Optional<String> n = Optional.ofNullable("Aditya or nULL")
 // if want to return Null only use Optional.isEmpty();
-// It has isPresent or ifPresent
+// It has isPresent() gives boolean or ifPresent() which acccepts consumer
 // get() risky if null
-// orElse()
-// orElseGet()
-// orElseThrow()
-// ifPresentorElse()
+// orElse("name") // check even if value present
+// orElseGet(()->"unknown") // do not check if value present
+// orElseThrow() // to throw NoSuchElement Exception
+// ifPresentorElse(consumer,consumer) // 
 
 
 public class optionaldemo {
@@ -40,8 +40,9 @@ public class optionaldemo {
      //  name3.ifPresent(System.out::println);
     //  System.out.println(name3.orElse("Unknown")); //always evalue orelse part 
     //  System.out.println(name3.orElseGet(()->"Unknown")); // doesn't evalue orelseif part if not null
-    // System.out.println(name3.orElseThrow());
+    // System.out.println(name3.orElseThrow()); // to throw NoSuchElementException
     name3.ifPresentOrElse(System.out::println, ()->System.out.println("Unknown"));
-
+    
+    
  }    
 }

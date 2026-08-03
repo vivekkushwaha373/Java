@@ -6,6 +6,13 @@ but HEAP and memory area is process specific
 
 A process can have multiple threads which is excuted by CPU 
 
+==================================================================
+ sleep() — doesn't touch locks at all. It just pauses. If the thread is inside a synchronized block, it keeps the lock while sleeping (which is why sleeping under a lock is bad practice — others get stuck).
+- wait(timeout) — the opposite: it releases the lock while waiting, and re-acquires it when woken up. That's the whole point of wait/notify (allows others to enter the critical section).
+- join(timeout) / parkNanos() — no lock involved
+
+=================================================
+
 OS scheculed threads to CPU
 
 

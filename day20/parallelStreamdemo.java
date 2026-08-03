@@ -3,7 +3,7 @@ package day20;
 import java.util.ArrayList;
 import java.util.List;
 
-// 1. parallel stream uses splitInterator (has two methods tryAdvnace(), trysplit()) Ho sake to parallelism use kr lena
+// 1. parallel stream uses splitInterator (has two methods tryAdvnace()// reposible for traversal, trysplit() // try to split the data) Ho sake to parallelism use kr lena
 
 // 2. it decompose source into parts then perform iteration 
 
@@ -16,7 +16,7 @@ import java.util.List;
 // Optimisd data structure
 
 //---> When Not to Use
-// Data set small
+// Data set small (overhead > performance)
 // stateful
 // shared mutable resource
 
