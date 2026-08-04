@@ -99,8 +99,36 @@ Synchronized keyword uses a lock called Monitor locks or Object locks
 
 Every Onbject in java has a lock (internal-lock)
 
-when we write synchrinzed on a method we are not applying lock on method rather we are applying lock on object 
+when we write synchrinzed on a method we are not applying lock on method rather we are applying lock on object for that section of code
 via thread and whatever comes within synchrinizd block will be executed by the thread then and only then thread release the lock from the object, and next thread will be executed
+
+case1: 
+
+synchrnized f1 
+
+f2 
+
+while thread t1 execute f1 thread t2 can also execute f2
+
+
+case2: 
+
+synchrnized f1 {}
+
+synchronized f2 {}
+
+while thread t1 execute f1 thread t2 can not execute f2
+
+
+case 3 
+
+synchronized(ClassName.this)
+
+it means if a thread t1 aquired a lock on that block of code using instance I1
+and thrad t2 also also cannot execute it using instance T2 but with synchrinized(this) is it possible when instances are different
+
+
+
 
 
 
