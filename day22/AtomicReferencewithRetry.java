@@ -39,20 +39,20 @@ class Seat {
     AtomicInteger counter = new AtomicInteger();
 
     void incrementCount() {
-        counter.incrementAndGet();
-        // while (true) {
+        // counter.incrementAndGet();
+        while (true) {
 
-        //    Integer expectedValue = counter.get();
-        //    Integer currentValue = expectedValue + 1;
+           Integer expectedValue = counter.get();
+           Integer newvalue = expectedValue + 1;
             
 
-        //     if (counter.compareAndSet(expectedValue, currentValue) == true) {
-        //         return;
+            if (counter.compareAndSet(expectedValue, newvalue) == true) {
+                return;
 
-        //     }
+            }
            
 
-        // }
+        }
 
 
     }

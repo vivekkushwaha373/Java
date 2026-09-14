@@ -173,7 +173,34 @@ because each object has one lock
 thread t1 appies lock on object and execute increment thread t2 will be blocked if uses the same object 
 because lock is aquired on onject
 
-===================================================
+
+==========================================================================================
+
+Inter Thread communication
+
+1. wait()
+2. notify()
+3. notifyAll()
+
+Wait(): this method i called on an object within a synchronized context/area to make the current wait until another thread invokes notify or notifyAll
+when thread calls wait() it release the lock on the object and enter into the waiting state 
+
+Notify(): this is called on an Object within synchronized context to wake up a waiting thread. When notify() is invoked it notifies on of the thread that are in waiting on the object to wake up. the choice of which thread to notify is not specifies and depends on the JVM.
+
+NotifyAll(): this method is similar to notify(), but it wakes up all thread that are waiting on the same object 
+
+
+
+Interview question that what is the difference of wait and join
+
+Waiting thread never runs unless notified      Bit join thread runs when other thread completes it tasks
+
+Waiting thread works in sycnchroniation        Join Thread doesn't work in synchronization context
+context
+
+Waiting thread releases a lock                 Join thread doesn't release any Lock
+
+===========================================================================================
 
 we have lock interface which privdes
 lock()
@@ -279,31 +306,7 @@ tryOptimisticRead()  // this doesn't aquire lock
 
 note: stampede lock is not reentrant
 
-==========================================================================================
 
-Inter Thread communication
-
-1. wait()
-2. notify()
-3. notifyAll()
-
-Wait(): this method i called on an object within a synchronized context/area to make the current wait until another thread invokes notify or notifyAll
-when thread calls wait() it release the lock on the object and enter into the waiting state 
-
-Notify(): this is called on an Object within synchronized context to wake up a waiting thread. When notify() is invoked it notifies on of the thread that are in waiting on the object to wake up. the choice of which thread to notify is not specifies and depends on the JVM.
-
-NotifyAll(): this method is similar to notify(), but it wakes up all thread that are waiting on the same object 
-
-
-
-Interview question that what is the difference of wait and join
-
-Waiting thread never runs unless notified      Bit join thread runs when other thread completes it tasks
-
-Waiting thread works in sycnchroniation        Join Thread doesn't work in synchronization context
-context
-
-Waiting thread releases a lock                 Join thread doesn't release any Lock
 
 ===========================================================================================
 

@@ -19,5 +19,8 @@ public class ScheduledThreadPoolDemo {
           System.out.println(Thread.currentThread().getName()+" is Being Executed");
         },2, 3, TimeUnit.SECONDS);
 
+        // 2 is initial delay before execution even starts
+        // 3 is periodic delay
+
     }
 }

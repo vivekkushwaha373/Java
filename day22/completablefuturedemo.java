@@ -25,7 +25,7 @@ public class completablefuturedemo {
      
         // System.out.println(future.join()); // this is unchecked exception with completable futurw
         try{
-            System.out.println(future1.get());  // this will give unchecked exception
+            System.out.println(future1.get());  // this will give checked exception
 
         }catch(Exception e){}
 

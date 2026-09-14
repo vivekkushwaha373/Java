@@ -25,7 +25,6 @@ class Resource {
 if(lock.tryLock())
 {
 
-    lock.lock();
     try {
         System.out.println(Thread.currentThread().getName() + " entered");
 

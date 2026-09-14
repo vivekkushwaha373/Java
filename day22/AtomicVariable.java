@@ -30,6 +30,7 @@ public class AtomicVariable {
 class Counter{
     // int count =0;
     AtomicInteger count  = new AtomicInteger();
+    
     void increment(){
          count.getAndIncrement();
     }
