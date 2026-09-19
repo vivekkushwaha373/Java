@@ -10,5 +10,7 @@ public record MathDemo() {
         System.out.println(Math.PI);
         System.out.println(Math.sqrt(25));
         System.out.println(Math.nextAfter(1,2));
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
     }
 }

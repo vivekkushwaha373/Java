@@ -7,8 +7,8 @@ class Ankit {
 
 class Vivek extends Ankit {
     Vivek() {
+        super();  
         System.out.println("Hii vivek");
-        super();
     }
 }
 public class thisAndSuper {

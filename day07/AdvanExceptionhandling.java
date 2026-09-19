@@ -13,27 +13,36 @@ import java.io.FileReader;
 class ExceptionTest{
 
     void print1(){
-        print2();
+       
+        try{
+
+             print2();
+        }catch(Exception e){
+          System.out.println(e.getMessage());
+        //   e.printStackTrace();
+    
+        }finally{
+            System.out.println("Handled in print1() funtion");
+        }
+         System.out.println("print 1");
     }
 
-    void print2(){
+    void print2()throws FileNotFoundException{
         print3();
+        System.out.println("print 2");
     }
-    void print3(){
-       print4();
+    void print3()throws FileNotFoundException{
+        print4();
+        System.out.println("print 3");
     }
 
-    void print4(){
-       try{
+    void print4() throws FileNotFoundException{
+        try{
 
-           print5();
-       }
-       catch(Exception error){
-        error.printStackTrace();
-       }
-       finally{
-          System.out.println("Always runs no matter what");
-       }
+            print5();
+        }catch(Exception e){}
+        System.out.println("print 4");
+     
     }
 
     void print5() throws FileNotFoundException{

@@ -10,6 +10,8 @@
 > final class can not be inherited
 > An interface can contain:
 > abstract class can not be final
+> static methods of interface is not inherited hence cannot be accessed by object of class, but static variables of interfae 
+is inherited and hence accessed by object of class. However static methods and variabels of class always inherited unlike interfaces
 
 Abstract methods
 Default methods

@@ -13,16 +13,16 @@ Object
      │   └── ExceptionInInitializerError
      │
      └── Exception
-         ├── IOException
+         ├── IOException         //checked
          │   ├── FileNotFoundException
          │   ├── EOFException
          │   └── InterruptedIOException
          │
-         ├── SQLException
+         ├── SQLException        // checked
          │
-         ├── ClassNotFoundException
-         │
-         ├── InterruptedException
+         ├── ClassNotFoundException // checked
+         │ 
+         ├── InterruptedException   // checked 
          │
          ├── ParseException
          │

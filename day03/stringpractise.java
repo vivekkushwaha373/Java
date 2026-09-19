@@ -2,7 +2,7 @@ package day03;
 
 public class stringpractise {
     public static void main(String[] args) {
-        String a = "hello";
+        String a = "helrlohel";
         String b = "hello";
         String c = "hello %d";
         System.out.println(a.equals(b));
@@ -14,6 +14,21 @@ public class stringpractise {
         System.out.println(a.indexOf("lloo"));
         System.out.println(a.contains("ello"));
         System.out.println(a.substring(0,4));
-        System.out.println();
+        System.out.println(a.length());
+        System.out.println(a.charAt(0));
+        System.out.println(a.concat(" ji how are you"));
+        System.out.println(a.toCharArray());
+        System.out.println(a.toUpperCase());
+        System.out.println(a.toLowerCase());
+        System.out.println(a.isBlank());
+        System.out.println(a.isEmpty());
+        System.out.println(a.replace('l', 'd'));
+        System.out.println(a.repeat(3));
+        System.out.println(a.hashCode());
+        System.out.println(a.replaceAll("hel", "h"));
+        System.out.println(a.replaceFirst("h", "g"));
+        // System.out.println();
+
+        // System.out.println(a.);
     }
 }

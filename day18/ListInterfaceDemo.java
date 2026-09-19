@@ -26,9 +26,10 @@ public class ListInterfaceDemo {
         list.lastIndexOf(2);
         ListIterator<Integer> li = list.listIterator();
 
-        // while(it.hasNext()){
-        //     System.out.println(it.next());
-        // }
+        while(it.hasNext()){
+            System.out.println(it.next());
+            it.remove()
+        }
         while(li.hasPrevious()){
             System.out.println(li.previous());
         }
